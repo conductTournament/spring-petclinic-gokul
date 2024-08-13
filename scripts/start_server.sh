@@ -1,5 +1,4 @@
 #!/bin/bash
-
 sudo systemctl daemon-reload
 sudo systemctl start my-app-java.service
 sudo systemctl enable my-app-java.service
