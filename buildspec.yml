@@ -1,5 +1,4 @@
 version: 0.2
- 
 phases:
   install:
     runtime-versions:
@@ -14,25 +13,21 @@ phases:
       - export M2_HOME=$PWD/apache-maven-3.9.1
       - export PATH=$M2_HOME/bin:$PATH
       - mvn -version 
- 
   pre_build:
     commands:
       - echo Caching Maven dependencies...
       - mvn dependency:go-offline -B 
- 
   build:
     commands:
       - echo Building the application...
       - mvn clean package -DskipTests -B 
- 
   post_build:
     commands:
       - echo Build completed successfully!
- 
- 
+
 artifacts:
   files:
     - '**/*'   
 cache:
   paths:
-    - "/root/.m2/**/*" 
+    - "/root/.m2/**/*"
