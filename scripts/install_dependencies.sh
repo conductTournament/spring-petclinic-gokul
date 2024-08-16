@@ -1,4 +1,5 @@
 #!/bin/bash
-echo "Stopping Apache server"
-sudo systemctl stop httpd
+echo "Checking Java running"
+sudo yum install java-17-amazon-corretto.x86_64 -y
+java -version
 
