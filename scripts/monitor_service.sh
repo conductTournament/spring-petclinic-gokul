@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define variables
-JAR_PATH="/home/ubuntu/app/spring-petclinic-3.3.0-SNAPSHOT.jar.jar"
+JAR_PATH="/home/ubuntu/app/*.jar"
 LOG_FILE="/home/ubuntu/app/application.log"
 PROCESS_NAME="java -jar $JAR_PATH"
 
